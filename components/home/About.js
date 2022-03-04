@@ -38,7 +38,7 @@ const About = () => {
             dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Rem, vel quis! Laudantium, distinctio facilis. Maiores commodi
             voluptatem quasi sequi porro, perspiciatis doloremque rerum
-            reprehenderit dicta.&nbsp;&nbsp;
+            reprehenderit dicta.
             <Link href="/doc" target="0">
               <a className="text-orange-600 underline font-medium">my resume</a>
             </Link>
