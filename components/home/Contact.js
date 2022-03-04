@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const myLoader = ({ src, width, quality }) => {
-  return `http://localhost:3000/${src}?w=${width}&q=${quality || 75}`;
+  return `/${src}?w=${width}&q=${quality || 75}`;
 };
 
 const Contact = () => {
@@ -20,7 +20,7 @@ const Contact = () => {
           <div className="relative h-60 w-full">
             <Image
               loader={myLoader}
-              src={"/static/images/contacts.jpeg"}
+              src={"images/contacts.jpeg"}
               alt="contact"
               layout="fill"
             />

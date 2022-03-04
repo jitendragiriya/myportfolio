@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const myLoader = ({ src, width, quality }) => {
-  return `http://localhost:3000/${src}?w=${width}&q=${quality || 75}`;
+  return `/${src}?w=${width}&q=${quality || 75}`;
 };
 
 const About = () => {
@@ -22,7 +22,7 @@ const About = () => {
             <div className="relative h-56 w-32">
               <Image
                 loader={myLoader}
-                src={"/static/images/jitendragiriya.png"}
+                src={"images/jitendragiriya.png"}
                 alt="jitendragiriya"
                 layout="fill"
               />

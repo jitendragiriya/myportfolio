@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const myLoader = ({ src, width, quality }) => {
-  return `http://localhost:3000/${src}?w=${width}&q=${quality || 75}`;
+  return `/${src}?w=${width}&q=${quality || 75}`;
 };
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="img-box h-56 w-32 relative md:h-80 md:w-44  lg:h-96 lg:w-56">
             <Image
               loader={myLoader}
-              src={"/static/images/jitendragiriya.png"}
+              src={"images/jitendragiriya.png"}
               alt="jitendragiriya"
               layout="fill"
             />
