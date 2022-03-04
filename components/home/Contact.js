@@ -7,7 +7,10 @@ const myLoader = ({ src, width, quality }) => {
 
 const Contact = () => {
   return (
-    <section className="contact flex flex-col max-w-6xl mx-auto items-center mb-12" id="contact">
+    <section
+      className="contact flex flex-col max-w-6xl mx-auto items-center mb-12"
+      id="contact"
+    >
       <div className="title my-12">
         <h2 className="text-4xl font-medium">Contact</h2>
       </div>
@@ -17,7 +20,7 @@ const Contact = () => {
           <div className="relative h-60 w-full">
             <Image
               loader={myLoader}
-              src="images/contacts.jpeg"
+              src={"/static/images/contacts.jpeg"}
               alt="contact"
               layout="fill"
             />

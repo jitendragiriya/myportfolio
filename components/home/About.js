@@ -8,7 +8,10 @@ const myLoader = ({ src, width, quality }) => {
 
 const About = () => {
   return (
-    <section className="about flex flex-col max-w-6xl mx-auto items-center" id="about">
+    <section
+      className="about flex flex-col max-w-6xl mx-auto items-center"
+      id="about"
+    >
       <div className="title my-12">
         <h2 className="text-4xl font-medium">About</h2>
       </div>
@@ -19,7 +22,7 @@ const About = () => {
             <div className="relative h-56 w-32">
               <Image
                 loader={myLoader}
-                src="images/jitendragiriya.png"
+                src={"/static/images/jitendragiriya.png"}
                 alt="jitendragiriya"
                 layout="fill"
               />
@@ -27,7 +30,9 @@ const About = () => {
           </div>
         </div>
         <div className="right flex p-4 flex-col md:w-2/4">
-          <h1 className="text-4xl font-medium mb-4">I&apos;m Jitendra giriya</h1>
+          <h1 className="text-4xl font-medium mb-4">
+            I&apos;m Jitendra giriya
+          </h1>
           <h3 className="text-2xl font-semibold text-orange-600 mb-4">
             Web Developer
           </h3>

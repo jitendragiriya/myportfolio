@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="img-box h-56 w-32 relative md:h-80 md:w-44  lg:h-96 lg:w-56">
             <Image
               loader={myLoader}
-              src="images/jitendragiriya.png"
+              src={"/static/images/jitendragiriya.png"}
               alt="jitendragiriya"
               layout="fill"
             />
