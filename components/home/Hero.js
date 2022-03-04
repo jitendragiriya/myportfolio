@@ -12,7 +12,7 @@ const Hero = () => {
         <h2 className="text-4xl font-medium relative flex flex-col md:text-5xl lg:text-7xl">
           <span className="mb-4">Hi</span>
           <span className="mb-4 flex">
-            I'm <h3 className="text-orange-600 ml-1">Jitendra Giriya</h3>
+            I&apos;m <h3 className="text-orange-600 ml-1">Jitendra Giriya</h3>
           </span>
           <span className="mb-4">Web Developer</span>
         </h2>
