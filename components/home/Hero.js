@@ -7,7 +7,7 @@ const myLoader = ({ src, width, quality }) => {
 
 const Hero = () => {
   return (
-    <div className="hero flex flex-col items-center justify-center min-h-screen h-screen pt-16 overflow-hidden max-w-6xl mx-auto md:flex-row md:w-full md:justify-between px-4">
+    <div className="hero flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] h-[calc(100vh-4rem)] overflow-hidden max-w-6xl mx-auto md:flex-row md:w-full md:justify-between px-4 z-20">
       <div className="left h-2/4 flex items-center">
         <h2 className="text-4xl font-medium relative flex flex-col md:text-5xl lg:text-7xl">
           <span className="mb-4">Hi</span>

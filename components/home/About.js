@@ -12,12 +12,12 @@ const About = () => {
       className="about flex flex-col max-w-6xl mx-auto items-center"
       id="about"
     >
-      <div className="title my-12">
+      <div className="title mb-12 mt-16">
         <h2 className="text-4xl font-medium">About</h2>
       </div>
 
       <div className="flex flex-col-reverse w-full relative mx-auto md:flex-row">
-        <div className="left flex p-4 justify-center items-center md:w-2/4">
+        <div className="left flex p-4 justify-center items-center md:w-1/2">
           <div className="h-56 w-56 bg-orange-600 rounded-full overflow-hidden flex items-center justify-center">
             <div className="relative h-56 w-32">
               <Image
@@ -45,7 +45,7 @@ const About = () => {
             voluptatem quasi sequi porro, perspiciatis doloremque rerum
             reprehenderit dicta.
             <Link href="/doc" target="0">
-              <a className="text-orange-600 underline font-medium">my resume</a>
+              <a className="text-orange-600 underline font-medium ml-2">my resume</a>
             </Link>
           </p>
         </div>
