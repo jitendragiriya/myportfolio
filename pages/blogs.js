@@ -1,5 +1,5 @@
 import Head from "next/head";
-import AllBlogs from "../components/blogs/AllBlogs";
+import AllBlogs from "../components/blog/AllBlogs";
 
 const Blogs = () => {
   return (

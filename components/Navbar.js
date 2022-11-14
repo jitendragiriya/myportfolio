@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 
+const hamBar = [0, 1, 2];
+
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const [hamburger, setHamburger] = useState(false);
@@ -62,15 +64,23 @@ const Navbar = () => {
               projects
             </a>
           </Link>
+          <Link href="/login">
+            <a className="w-full text-center my-2 py-2 font-normal font-sans capitalize md:px-4 md:mx-2 text-black dark:text-white">
+              login
+            </a>
+          </Link>
         </nav>
         <div className="header-icons flex items-center">
           <div
             className="hamburger flex flex-col cursor-pointer md:hidden mx-4"
             onClick={showSidebar}
           >
-            <span className="w-5 h-0.5 bg-black my-0.5 dark:bg-white"></span>
-            <span className="w-5 h-0.5 bg-black my-0.5 dark:bg-white"></span>
-            <span className="w-5 h-0.5 bg-black my-0.5 dark:bg-white"></span>
+            {hamBar.map((i) => (
+              <span
+                key={i}
+                className="w-5 h-0.5 bg-black my-0.5 rounded dark:bg-white"
+              />
+            ))}
           </div>
           <div className="cursor-pointer" onClick={handleOnClick}>
             <Brightness4Icon className="text-black dark:text-white" />

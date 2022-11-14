@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// contact model
+model Contact {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  email     String
+  name      String
+  message   String
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  stack       String
+  title       String
+  description String
+  techs       Tech[]
+}
+
+model Tech {
+  id        Int      @id @default(autoincrement())
+  name      String
+  Project   Project? @relation(fields: [projectId], references: [id])
+  projectId Int?
+}

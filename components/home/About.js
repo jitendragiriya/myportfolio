@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,12 +6,10 @@ const myLoader = ({ src, width, quality }) => {
   return `/${src}?w=${width}&q=${quality || 75}`;
 };
 
-const About = () => {
+const About = (props) => {
+  console.log(props);
   return (
-    <section
-      className="about flex flex-col max-w-6xl mx-auto items-center"
-      id="about"
-    >
+    <div className="about flex flex-col max-w-6xl mx-auto items-center md:px-4">
       <div className="title mb-12 mt-16">
         <h2 className="text-4xl font-medium">About</h2>
       </div>
@@ -34,23 +32,19 @@ const About = () => {
             I&apos;m Jitendra giriya
           </h1>
           <h3 className="text-2xl font-semibold text-orange-600 mb-4">
-            Web Developer
+            myData
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, vel
-            quis! Laudantium, distinctio facilis. Maiores commodi voluptatem
-            quasi sequi porro, perspiciatis doloremque rerum reprehenderit
-            dicta. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Rem, vel quis! Laudantium, distinctio facilis. Maiores commodi
-            voluptatem quasi sequi porro, perspiciatis doloremque rerum
-            reprehenderit dicta.
-            <Link href="/doc" target="0">
-              <a className="text-orange-600 underline font-medium ml-2">my resume</a>
+            description
+            <Link href={`/doc`} target="0">
+              <a className="text-orange-600 underline font-medium ml-2">
+                my resume
+              </a>
             </Link>
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

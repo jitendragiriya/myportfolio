@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ProjectDetails from "../../components/projects/ProjectDetails";
+import ProjectDetails from "../../components/project/ProjectDetails";
 
 const project = () => {
   return (

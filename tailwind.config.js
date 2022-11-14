@@ -11,6 +11,10 @@ module.exports = {
           "0%, 100%": { bottom: "-100px", opacity: "0" },
           "20% ,50%, 80%": { bottom: "0", opacity: "1" },
         },
+        circlex: {
+          "0%, 100%": { height: "15px", width: "15px" },
+          "50%": { height: "25px", width: "25px" },
+        },
       },
     },
   },
